@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { User } from '../../interfaces/user.interfaces';
 
 @Component({
@@ -9,4 +9,10 @@ import { User } from '../../interfaces/user.interfaces';
 })
 export class UserCard {
   user = input.required<User>();
+
+  onEliminar = output<number>();
+
+  eliminarClick() {
+    this.onEliminar.emit(this.user().id);
+  }
 }

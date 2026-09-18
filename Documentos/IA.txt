@@ -1,0 +1,7 @@
+Utilice IA para que me explique la forma de pasar parametros a un componente padre utilizando output:
+Dentro de <> se indica el tipo de dato del parametro de hijo a padre
+dentro del emit se debe poner el parametro dentro del parentesis .emit(parametro)
+
+en user-card.ts no sabia como pasarle el id, asi que la IA lo completo agregando el this.user().id
+
+Me daba un error en app.html la IA me apoyo completando con $event

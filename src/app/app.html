@@ -3,6 +3,6 @@
 <div>Directorio {{counterUser()}} Usuarios</div>
 <div class="container">
     @for(user of users(); track $index){
-    <app-user-card [user]="user"></app-user-card>
+    <app-user-card [user]="user" (onEliminar)="eliminarUsuario($event)"></app-user-card>
     }
 </div>

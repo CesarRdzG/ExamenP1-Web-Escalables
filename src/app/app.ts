@@ -87,4 +87,8 @@ export class App {
   reverseOrder() {
     this.users.update(users => users.reverse());
   }
+
+  eliminarUsuario(id: number) {
+    this.users.update(users => users.filter(user => user.id !== id));
+  }
 }
